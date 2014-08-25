@@ -1,9 +1,9 @@
 AniLyrics
 =========
 
-Get two lines of English-translated anime lyrics from animelyrics.com and post it to Twitter.
+Get two lines of English-translated anime lyrics from animelyrics.com and post it on Twitter.
 
-This is alpha version. Full of bugs and not recommended to use. However you may experimenting with it.
+This is alpha version. Extremely buggy and not recommended to use. However you may experimenting with it.
 
 Live example is on http://twitter.com/anilyrics
 
