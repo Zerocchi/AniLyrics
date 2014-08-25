@@ -5,4 +5,4 @@ Get two lines of English-translated anime lyrics from animelyrics.com and posted
 
 Dependencies:
 - Requests 2.2.1
-- BeautifulSoup 4.3.2
+- beautifulsoup4 4.3.2
