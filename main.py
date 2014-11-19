@@ -28,12 +28,14 @@ while True:
                 print "\n----------------------------------"
                 print lyrics[0] + "\n" + lyrics[1]
                 print "----------------------------------\n"
-                if not TweepError:
+                try:
                         api.update(lyrics[0] + "\n" + lyrics[1] + "\n\n" + s.url)
                         idleperiod = randint(900,3600)
                         print "Sleep for " + str(idleperiod) + " seconds."
                         sleep(idleperiod)
-                else:
+                except TweepError:
+                        print "No Twitter authorization. Quitting..."
+                        sleep(3)
                         ex()
             found = False
             break
