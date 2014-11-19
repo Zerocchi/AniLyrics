@@ -44,7 +44,6 @@ class Scraper:
 
 	def engexist(self, parsed):
 		# This will check whether translation exist or not
-<<<<<<< HEAD
                 try:
                         if parsed.find('th',attrs={'align':'center'}):
                                 return True
@@ -52,11 +51,6 @@ class Scraper:
                                 return False
                 except TypeError:
                         return False
-=======
-		if parsed.find('th',attrs={'align':'center'}):
-			return True
-		return False
->>>>>>> 953a4210b46bb9cb23ac35aaddbf45e21bbf5bb2
 
 	def getlyric(self, parsed, verse, line):
 		byverse = [] # collect the lyrics by verse
@@ -86,12 +80,3 @@ class Scraper:
 		return e
 		pass
 		
-	
-
-
-
-<<<<<<< HEAD
-	
-=======
-	
->>>>>>> 953a4210b46bb9cb23ac35aaddbf45e21bbf5bb2
