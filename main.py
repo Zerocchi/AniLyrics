@@ -2,6 +2,7 @@ from lyrics import *
 from twitter import *
 from random import randint
 from time import sleep
+from tweepy import TweepError
 
 api = Twitter()
 s = Scraper()
