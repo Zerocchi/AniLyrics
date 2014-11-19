@@ -1,7 +1,7 @@
 AniLyrics
 =========
 
-[![Build Status](https://travis-ci.org/Zerocchi/AniLyrics.svg?branch=master)](https://travis-ci.org/Zerocchi/AniLyrics)
+[![Build Status](https://travis-ci.org/Zerocchi/AniLyrics.svg?branch=master)](https://travis-ci.org/Zerocchi/AniLyrics) [![Download](http://img.shields.io/badge/download-3%20kB-blue.svg)](https://github.com/Zerocchi/AniLyrics/archive/master.zip)
 
 Get two lines of English-translated anime lyrics from animelyrics.com and post it on Twitter.
 
