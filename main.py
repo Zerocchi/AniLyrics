@@ -19,12 +19,13 @@ while True:
         print s.url + " - " + str(s.engexist(data))
         if s.engexist(data) == True:
             lyrics = s.getlyric(data, verse, line)
-            if type(lyrics) is not IndexError or TweepError:
+            if type(lyrics) is not IndexError:
                 found = True
                 print "\n----------------------------------"
                 print lyrics[0] + "\n" + lyrics[1]
                 print "----------------------------------\n"
-                api.update(lyrics[0] + "\n" + lyrics[1] + "\n\n" + s.url)
+                if not TweepError:
+                        api.update(lyrics[0] + "\n" + lyrics[1] + "\n\n" + s.url)
                 idleperiod = randint(900,3600)
                 print "Sleep for " + str(idleperiod) + " seconds."
                 sleep(idleperiod)
