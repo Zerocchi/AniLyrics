@@ -3,6 +3,7 @@ from twitter import *
 from random import randint
 from time import sleep
 from tweepy import TweepError
+import sys
 
 api = Twitter()
 s = Scraper()
