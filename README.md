@@ -1,6 +1,8 @@
 AniLyrics
 =========
 
+[![Build Status](https://travis-ci.org/Zerocchi/AniLyrics.svg?branch=master)](https://travis-ci.org/Zerocchi/AniLyrics)
+
 Get two lines of English-translated anime lyrics from animelyrics.com and post it on Twitter.
 
 This is alpha version. Extremely buggy and not recommended to use. However you may experimenting with it.
