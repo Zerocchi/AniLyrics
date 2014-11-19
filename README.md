@@ -10,5 +10,6 @@ Live example is on http://twitter.com/anilyrics
 Dependencies:
 - Requests 2.2.1
 - beautifulsoup4 4.3.2
+- tweepy 2.3.0
 
 Edit `twitter.py` and add your own Twitter credentials. Then run `main.py`.
