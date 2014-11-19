@@ -12,6 +12,9 @@ def generate():
 	line = randint(1,3)
 	return verse, line
 
+def ex():
+        sys.exit()
+
 while True:
     while found == False:
         verse, line = generate()
@@ -26,8 +29,10 @@ while True:
                 print "----------------------------------\n"
                 if not TweepError:
                         api.update(lyrics[0] + "\n" + lyrics[1] + "\n\n" + s.url)
-                idleperiod = randint(900,3600)
-                print "Sleep for " + str(idleperiod) + " seconds."
-                sleep(idleperiod)
+                        idleperiod = randint(900,3600)
+                        print "Sleep for " + str(idleperiod) + " seconds."
+                        sleep(idleperiod)
+                else:
+                        ex()
             found = False
             break
