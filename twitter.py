@@ -5,11 +5,11 @@ s = Scraper()
 class Twitter:
 
     # Go to dev.twitter.com and make your own app. Get the following keys.
-    consumer_key = "8Gs7MNjwgmEeOEI0c3i3jfHzu"
-    consumer_secret = "89IZ2rfjwy2Kef3D7b4C0e4z9M83YowQoXgCCxVIsX4sFTIBKs"
-    access_token = "2170046142-OHZ6OEEBKWxDmhBzOpYM2XW1g55riVr2j3R6wAg"
-    access_secret = "PrUQWZV6wIDjJ3aIya4mcvAcadDis2vS9xuiJgkuNuhCX"
-
+    consumer_key = ""
+    consumer_secret = ""
+    access_token = ""
+    access_secret = ""
+    
     def __init__(self):
         self.api = ""
         self.auth()
