@@ -40,8 +40,7 @@ while True:
                 try:
                     lyricupdate()
                 except TweepError:
-                        print "Twitter authorization cannot be found. Trying again..."
-                        print "Hit Ctrl+C to quit."
-                        lyricupdate()
+                        print "Twitter authorization failed. Please double check your twitter.py credentials."
+                        ex()
             found = False
             break
