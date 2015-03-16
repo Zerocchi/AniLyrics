@@ -7,6 +7,7 @@ import sys
 api = Twitter()
 s = Scraper()
 found = False
+retry_counter = 3
 
 
 def generate():
@@ -37,10 +38,16 @@ while True:
                 print "\n----------------------------------"
                 print lyrics[0] + "\n" + lyrics[1]
                 print "----------------------------------\n"
-                try:
-                    lyricupdate()
-                except TweepError:
-                        print "Twitter authorization failed. Please double check your twitter.py credentials."
-                        ex()
-            found = False
-            break
+                while retry_counter > 0:
+                    try:
+                        lyricupdate()
+                        found = False
+                        break
+                    except TweepError:
+                            print "Cannot post tweet. Retrying..."
+                            retry_counter -= 1
+                            sleep(5)
+                            continue
+                else:
+                    print "Twitter authorization failed. Please double check your twitter.py credentials."
+                    ex()
