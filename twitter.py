@@ -1,11 +1,17 @@
 import tweepy
 from lyrics import Scraper
+from utils import ex
 s = Scraper()
+
 
 class Twitter:
 
     config = {}
-    execfile("keys.conf", config)
+    try:
+        execfile("keys.conf", config)
+    except IOError:
+        print "Please specify your Twitter keys credentials as \"keys.conf\" file."
+        ex()
     
     def __init__(self):
         self.api = ""

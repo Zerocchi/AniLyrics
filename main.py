@@ -2,7 +2,7 @@ from twitter import *
 from random import randint
 from time import sleep
 from tweepy import TweepError
-import sys
+from utils import ex
 
 api = Twitter()
 s = Scraper()
@@ -21,10 +21,6 @@ def lyricupdate():
     idleperiod = randint(900, 3600)
     print "Sleep for " + str(idleperiod) + " seconds."
     sleep(idleperiod)
-
-
-def ex():
-    sys.exit()
 
 while True:
     while not found:
