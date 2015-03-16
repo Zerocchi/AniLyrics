@@ -1,4 +1,4 @@
-AniLyrics
+AniLyrics ![](https://img.shields.io/badge/Python-2.7-blue.svg?style=flat-square)
 =========
 
 [![Build Status](https://travis-ci.org/Zerocchi/AniLyrics.svg?branch=master)](https://travis-ci.org/Zerocchi/AniLyrics) [![Download](http://img.shields.io/badge/download-3%20kB-blue.svg)](https://github.com/Zerocchi/AniLyrics/archive/master.zip)
